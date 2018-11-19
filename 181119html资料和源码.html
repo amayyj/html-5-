@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+    <meta http-equiv="Content" content="text/html;charse=utf-8"/>
+
+	<title>html资料和源码</title>
+</head>
+<body>
+
+	  表格的背景图：background=“图片地址.JPG”
+
+
+
+      表格的边框颜色：bordercolor=””（取值同bgcolor，在border值不为0时设置）
+
+
+
+      亮边框颜色：bordercolorlight=”red”(此处red可换成其它颜色，亮边框指表格的左边和上边的边框，在border值不为0时设置)
+
+
+      暗边框颜色：bordercolordark=”red”（此处red可换成其它颜色，暗边框值表格的右边和下边的边框，在border值不为0时设置）
+
+
+
+      边框线样式：style=”border-style:groove”（此处未作伸展）
+
+
+
+      单元格的bordercolor设置有些讲究，主要用于实现单像素的表格边框——要实现这种效果，要求表格的border为1，且<table>里设置了bordercolor颜色值，cellpadding和cellspacing都设置为0，然后将<td>的bordercolor颜色值设置为与<td>的背景色相一致。
+
+
+
+      Valign的取值方法主要有：left（左对齐）
+                            Middle（居中）
+                            Top（靠顶）
+                            Bottom（靠底）
+
+
+
+      <P align=”center”>
+      <font face=”黑体” size=”1-7” color=”#f2f2f2”>这里是居中灰色黑体4号内容</font>
+      </P>
+
+      <p>
+        <font color=”#f2f2f2”>字体颜色为灰色的内容</font>
+      </p>
+
+
+
+      链接邮件mailto参数：
+                    Subjec：邮件的标题
+                    Body：邮件的内容
+                    Cc：一个抄送对象
+                    Bcc：一个暗送对象
+                语法：
+                    Mailto：URL？参数1=内容&参数2=内容&参数3=内容
+                    符号：& 用以连接多个条件
+                示例：
+                    Mailto：346391770@qq.com？Subject=”邮件的标题”
+                    Mailto：346391770@qq.com？Subject=”邮件的标题”&body=”邮件的内容”
+                    Mailto：346391770@qq.com?CC=346391770@qq.com&bcc=amayyj@sina.com
+
+
+
+
+                在多行多列的表格里，只需设置某列的第一个单元格的宽度width，其他同列的<td>不必给出，因为往下的各单元格的宽度将与其一致，如果都设置，该列的最终宽度以width值最大的那个单元格为标准。
+
+                表格的行的高度同上，定义了某一行头一个单元格的高度之后，该行其他单元格会自动得到相同的高度值，不必再一一设置》<td>的height属性。
+
+
+
+
+                当今用户的显示器分辨率有两大标准：800×600和1024×768
+
+
+
+
+
+
+
+</body>
+
+</html>
